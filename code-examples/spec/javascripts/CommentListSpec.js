@@ -49,7 +49,7 @@ describe("CommentsList", function(){
     // mostRecentCall.args: returns argument array from last call to spy.
     // argsForCall[i]
 
-    it("should not add the comment if it has dirty language", function(){
+    it("should not add the comment if it has bad language", function(){
       spyOn(comment, "hasCleanLanguage").andReturn(false);
       commentList.addComment(comment);
       expect(commentList.comments).toBeEmpty();
