@@ -9,6 +9,8 @@ xdescribe('Spreadsheet', function() {
     //
     // This will wait until the passed function returns true
     // You can poss an optional timeout value to waitsFor
+    //
+    // You can also use spys to simulate pauses in async calls.
 
     waitsFor(function() {
       return spreadsheet.calculationIsComplete();
