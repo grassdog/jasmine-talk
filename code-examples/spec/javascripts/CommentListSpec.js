@@ -61,6 +61,7 @@ describe("CommentsList", function(){
       // Creating a pure spy object
       beforeEach(function(){
         commentAddedCallback = jasmine.createSpy();
+        //commentAddedCallback = jasmine.createSpyObj('fakeCallback', ['fakeMethod1', 'fakeMethod2']);
         commentList = new CommentList(commentAddedCallback);
       });
 
